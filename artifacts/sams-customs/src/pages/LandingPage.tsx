@@ -214,7 +214,7 @@ export default function LandingPage() {
               transition={{ duration: 0.9, delay: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
               className="relative"
             >
-              <div className="bg-white/70 backdrop-blur-2xl border border-[#E0E0E0] rounded-xl p-6 shadow-[0_6px_32px_rgba(0,0,0,0.07)]">
+              <div className="bg-white/70 backdrop-blur-2xl border border-[#E0E0E0] rounded-xl px-8 py-6 shadow-[0_6px_32px_rgba(0,0,0,0.07)]">
                 <div className="flex items-center justify-between mb-5">
                   <div className="inline-flex items-center gap-2 bg-[#F5F5F7] border border-[#E0E0E0] rounded-full px-3 py-1">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#34C759] animate-pulse" />
