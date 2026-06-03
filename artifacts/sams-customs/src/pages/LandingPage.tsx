@@ -275,7 +275,7 @@ export default function LandingPage() {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 h-full">
           {/* LEFT — CLIENT WORKSTATIONS */}
-          <FadeUp className="relative overflow-hidden group cursor-pointer bg-[#F5F5F7]">
+          <FadeUp className="relative overflow-hidden group cursor-pointer bg-[#F5F5F7] h-full">
             <img
               src={chassisImage}
               alt="Client workstation chassis"
@@ -301,7 +301,7 @@ export default function LandingPage() {
           </FadeUp>
 
           {/* RIGHT — CREATOR LABS */}
-          <FadeUp delay={0.1} className="relative overflow-hidden group cursor-pointer bg-white">
+          <FadeUp delay={0.1} className="relative overflow-hidden group cursor-pointer bg-white h-full">
             <img
               src={studioDeskImage}
               alt="Creator lab studio desk"
@@ -339,7 +339,7 @@ export default function LandingPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 max-w-[1400px] mx-auto">
 
           {/* CARD 1 — Double width, dark */}
-          <FadeUp className="md:col-span-2 md:row-span-2 relative overflow-hidden bg-[#1C1C1E] min-h-[520px] group cursor-pointer" delay={0}>
+          <FadeUp className="md:col-span-2 md:row-span-2 relative overflow-hidden bg-[#1C1C1E] min-h-[520px] h-full group cursor-pointer" delay={0}>
             <img
               src={avantGardeImage}
               alt="Avant-garde case architecture"
