@@ -22,15 +22,26 @@ function BracketButton({
     <button
       onClick={onClick}
       data-testid={testId}
-      className={`group relative inline-flex items-center gap-1 px-6 py-3 text-xs tracking-[0.2em] uppercase font-medium transition-all duration-300 cursor-pointer ${
+      style={{ transition: "all 0.3s ease" }}
+      className={`group relative inline-flex items-center gap-1 px-6 py-3 text-xs tracking-[0.2em] uppercase font-[400] cursor-pointer hover:opacity-90 active:scale-[0.98] ${
         variant === "solid"
-          ? "bg-[#1C1C1E] text-white hover:bg-[#2C2C2E]"
-          : "border border-[#1C1C1E] text-[#1C1C1E] hover:bg-[#1C1C1E] hover:text-white"
+          ? "bg-[#1C1C1E] text-white hover:bg-[#2e2e30]"
+          : "border border-[#1C1C1E]/70 text-[#1C1C1E] hover:bg-[#1C1C1E] hover:text-white hover:border-[#1C1C1E]"
       } ${className}`}
     >
-      <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-mono text-[10px]">[</span>
-      <span>{children}</span>
-      <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-mono text-[10px]">]</span>
+      <span
+        className="opacity-0 group-hover:opacity-100 font-mono text-[10px]"
+        style={{ transition: "opacity 0.3s ease" }}
+      >
+        [
+      </span>
+      <span style={{ transition: "letter-spacing 0.3s ease" }}>{children}</span>
+      <span
+        className="opacity-0 group-hover:opacity-100 font-mono text-[10px]"
+        style={{ transition: "opacity 0.3s ease" }}
+      >
+        ]
+      </span>
     </button>
   );
 }
