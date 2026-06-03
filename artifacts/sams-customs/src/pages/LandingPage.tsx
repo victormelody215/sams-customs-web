@@ -89,14 +89,15 @@ export default function LandingPage() {
       >
         <div className="max-w-[1400px] mx-auto px-8 h-16 flex items-center justify-between">
           <span
-            className="text-[11px] tracking-[0.35em] uppercase font-semibold text-[#1C1C1E] cursor-pointer select-none"
+            className="text-[10px] tracking-[0.55em] uppercase font-[300] text-[#1a1a1a] cursor-pointer select-none"
+            style={{ fontFamily: "'Inter', sans-serif", letterSpacing: "0.55em" }}
             data-testid="brand-name"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             SAMS CUSTOMS
           </span>
 
-          <nav className="hidden md:flex items-center gap-10" data-testid="nav-links">
+          <nav className="hidden md:flex items-center gap-12" data-testid="nav-links">
             {[
               { label: "Bespoke Rigs", id: "bespoke-rigs" },
               { label: "Design Studio", id: "design-studio" },
@@ -107,7 +108,8 @@ export default function LandingPage() {
                 key={item.id}
                 data-testid={`nav-link-${item.id}`}
                 onClick={() => scrollTo(item.id)}
-                className="text-[11px] tracking-[0.18em] uppercase text-[#555] hover:text-[#1C1C1E] transition-colors duration-200 cursor-pointer"
+                className="text-[10px] uppercase font-[300] text-[#666] hover:text-[#1a1a1a] transition-colors duration-200 cursor-pointer"
+                style={{ fontFamily: "'Inter', sans-serif", letterSpacing: "0.28em" }}
               >
                 {item.label}
               </button>
