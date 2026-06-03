@@ -214,17 +214,20 @@ export default function LandingPage() {
               transition={{ duration: 0.9, delay: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
               className="relative"
             >
-              <div className="bg-white/60 backdrop-blur-2xl border border-[#E8E8E8] rounded-2xl p-8 shadow-[0_8px_40px_rgba(0,0,0,0.06)]">
-                <div className="inline-flex items-center gap-2 bg-[#F5F5F7] border border-[#E0E0E0] rounded-full px-3 py-1 mb-8">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#34C759] animate-pulse" />
-                  <span className="text-[9px] tracking-[0.3em] uppercase font-mono text-[#666]">Design Stage</span>
+              <div className="bg-white/70 backdrop-blur-2xl border border-[#E0E0E0] rounded-xl p-6 shadow-[0_6px_32px_rgba(0,0,0,0.07)]">
+                <div className="flex items-center justify-between mb-5">
+                  <div className="inline-flex items-center gap-2 bg-[#F5F5F7] border border-[#E0E0E0] rounded-full px-3 py-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#34C759] animate-pulse" />
+                    <span className="text-[9px] tracking-[0.3em] uppercase font-mono text-[#666]">Design Stage</span>
+                  </div>
+                  <span className="text-[9px] tracking-[0.2em] uppercase font-mono text-[#CCC]">SC-01</span>
                 </div>
 
-                <h2 className="text-[11px] tracking-[0.25em] uppercase text-[#999] mb-6 font-mono">
+                <h2 className="text-[9px] tracking-[0.3em] uppercase text-[#BBBBB] mb-3 font-mono text-[#C0C0C0]">
                   System Configuration
                 </h2>
 
-                <div className="space-y-0 divide-y divide-[#F0F0F0]" data-testid="specs-list">
+                <div className="divide-y divide-[#F0F0F0]" data-testid="specs-list">
                   {[
                     { label: "GPU", value: "RTX 5090 Ti · 96 GB VRAM" },
                     { label: "CPU", value: "Intel Core Ultra 9 · 36 Cores" },
@@ -232,18 +235,18 @@ export default function LandingPage() {
                     { label: "Storage", value: "8 TB PCIe Gen 5 NVMe" },
                     { label: "PSU", value: "5000W 80+ Titanium" },
                   ].map((spec) => (
-                    <div key={spec.label} className="flex items-center justify-between py-4">
-                      <span className="text-[10px] tracking-[0.2em] uppercase font-mono text-[#999]">
+                    <div key={spec.label} className="flex items-center justify-between py-2.5">
+                      <span className="text-[9px] tracking-[0.2em] uppercase font-mono text-[#B0B0B0]">
                         {spec.label}
                       </span>
-                      <span className="text-[12px] font-medium text-[#1C1C1E] text-right ml-4">
+                      <span className="text-[11px] font-[400] text-[#1C1C1E] text-right ml-4 tracking-[-0.01em]">
                         {spec.value}
                       </span>
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-8 flex flex-col sm:flex-row gap-3">
+                <div className="mt-5 pt-5 border-t border-[#F0F0F0] flex flex-col sm:flex-row gap-2.5">
                   <BracketButton variant="solid" data-testid="button-request-build" onClick={() => scrollTo("inquire")}>
                     Request a Build
                   </BracketButton>
@@ -252,10 +255,8 @@ export default function LandingPage() {
                   </BracketButton>
                 </div>
 
-                <p className="mt-6 text-[10px] text-[#BBB] leading-relaxed">
-                  All configurations are bespoke. Lead time 6–10 weeks.
-                  <br />
-                  Free worldwide white-glove delivery included.
+                <p className="mt-4 text-[9px] text-[#C8C8C8] leading-relaxed tracking-wide">
+                  Bespoke only · 6–10 week lead time · White-glove delivery worldwide
                 </p>
               </div>
             </motion.div>
