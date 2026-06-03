@@ -1,0 +1,23 @@
+Create a premium, luxury-grade, single-page landing page for a bespoke custom PC studio called "Sams Customs". 
+
+The core design theme is an ultra-minimalist aesthetic utilizing a color palette of pure white backgrounds, light studio gray (#F5F5F7), brushed metal/silver accents, and crisp, spaced-out charcoal text. 
+
+1. TOP NAVIGATION BAR: 
+A fixed, sticky header at the top with a subtle background blur effect. On the left, place the brand name "SAMS CUSTOMS" in a small, wide-tracked, elegant uppercase sans-serif font. On the right, include minimal text links for "Bespoke Rigs", "Design Studio", "Process", and "Inquire".
+
+2. HERO SECTION:
+Below the navbar, a massive hero layout with a pure white backdrop. The center headline should be bold, clean, and in a wide geometric sans-serif reading: "BESPOKE PERFORMANCE. TAILORED DIGITALLY." 
+Below the headline, create a split-screen design. On the left, place a large placeholder for a high-contrast, clean 3D desktop case concept render. On the right, place a floating, rounded translucent gray card with a 1px border. Inside this card, display high-end creator system specs (e.g., RTX GPU, Studio CPU, High-speed DDR5 RAM) in clean, minimalist typography, featuring a subtle badge at the top that reads "DESIGN STAGE". Place two sleek call-to-action buttons below it: a solid white button reading "Inquire About Build" and an outlined button reading "Explore Concepts".
+
+3. SPLIT CATEGORY BANNER (MIDDLE SECTION):
+Transition into a 2-column grid container spanning 70vh height. The layout splits into two large clickable sections with light gray (#F5F5F7) and white blocks divided by thin, clean lines. 
+- Left Card: Features a large headline reading "CLIENT WORKSTATIONS" overlaying a close-up, macro texture shot of a high-end brushed-metal computer chassis. Includes a text button with clean corner brackets [ ] that reads "VIEW CLIENT PORTFOLIO".
+- Right Card: Features a headline reading "CREATOR LABS" overlaying a minimalist, clean studio desk setup render. Includes a text button with brackets [ ] reading "EXPLORE CREATIVE RIGS".
+
+4. BENTO GRID NAVIGATION (BOTTOM SECTION):
+A 3-column bento grid layout to showcase secondary brand features:
+- Card 1 (Double Width, spans columns 1 and 2): A sleek block titled "UNMATCHED POWER. UNFORGETTABLE STYLE." showcasing an avant-garde digital case architecture concept.
+- Card 2 (Top Right): A clean, smaller square block titled "CUSTOM LAB PARTS & PERIPHERALS".
+- Card 3 (Bottom Right): A dark charcoal accent block titled "ARCHITECT YOUR RIG" with a distinct button that links to a design consultation intake form.
+
+All buttons across the site must feature subtle, industrial corner brackets [ ] that appear sharply on hover. The entire layout must feel spacious, elite, and highly structured, like a luxury architecture or high-end design firm website.

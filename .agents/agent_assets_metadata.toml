@@ -1,0 +1,14 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "PD2YUj4ZWCTEmyKxjid4f"
+uri = "file://attached_assets/generated_images/close_up_macro_shot_6c8c.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "zJletAIaovIcp66r14Rqn"
+uri = "file://attached_assets/generated_images/minimalist_clean_studio_desk_6e68.png"
+type = "image"
+title = "generated_image"

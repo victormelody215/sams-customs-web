@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Sams Customs"
+version = "1.0.0"
+id = "artifacts/sams-customs"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19075
+
+[services.development]
+run = "pnpm --filter @workspace/sams-customs run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sams-customs", "run", "build" ]
+publicDir = "artifacts/sams-customs/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19075"
+BASE_PATH = "/"
