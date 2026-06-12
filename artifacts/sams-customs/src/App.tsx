@@ -30,3 +30,20 @@ function App() {
 }
 
 export default App;
+import React from 'react';
+// Import matching your Vite root folder architecture
+import WorkstationShowcase from '../components/WorkstationShowcase';
+function App() {
+  return (
+    <div className="min-h-screen bg-zinc-950">
+      {/* Navigation header stays here */}
+
+      {/* Embedded Showcase Layout Grid & Multi-Step Engine */}
+      <WorkstationShowcase />
+
+      {/* Structural Footer */}
+    </div>
+  );
+}
+
+export default App;
