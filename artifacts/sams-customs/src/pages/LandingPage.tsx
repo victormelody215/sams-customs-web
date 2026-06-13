@@ -1,4 +1,4 @@
-import WorkstationShowcase from "../../../components/WorkstationShowcase";
+import WorkstationShowcase from "../components/WorkstationShowcase";
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import heroPcImage from "../assets/images/hero-pc.png";
