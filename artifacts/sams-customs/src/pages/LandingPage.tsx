@@ -1,3 +1,4 @@
+import WorkstationShowcase from "../../../components/WorkstationShowcase";
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import heroPcImage from "../assets/images/hero-pc.png";
@@ -104,9 +105,9 @@ export default function LandingPage() {
             style={{ fontFamily: "'Inter', sans-serif", letterSpacing: "0.55em" }}
             data-testid="brand-name"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            SAMS CUSTOMS
-          </span>
+          >SAMS CUSTOMS
+          </span
+            >
 
           <nav className="hidden md:flex items-center gap-12" data-testid="nav-links">
             {[
@@ -227,24 +228,24 @@ export default function LandingPage() {
                   System Configuration
                 </h2>
 
-                <div className="divide-y divide-[#F0F0F0]" data-testid="specs-list">
-                  {[
-                    { label: "GPU", value: "RTX 5090 Ti · 96 GB VRAM" },
-                    { label: "CPU", value: "Intel Core Ultra 9 · 36 Cores" },
-                    { label: "RAM", value: "256 GB DDR5 @ 7200 MT/s" },
-                    { label: "Storage", value: "8 TB PCIe Gen 5 NVMe" },
-                    { label: "PSU", value: "5000W 80+ Titanium" },
-                  ].map((spec) => (
-                    <div key={spec.label} className="flex items-center justify-between py-2.5">
-                      <span className="text-[9px] tracking-[0.2em] uppercase font-mono text-[#B0B0B0]">
-                        {spec.label}
-                      </span>
-                      <span className="text-[11px] font-[400] text-[#1C1C1E] text-right ml-4 tracking-[-0.01em]">
-                        {spec.value}
-                      </span>
-                    </div>
-                  ))}
-                </div>
+             <div className="divide-y divide-[#F0F0F0]" data-testid="specs-list">
+               {[
+                 { label: "GPU", value: "RTX 5090 Ti - 96 GB VRAM" },
+                 { label: "CPU", value: "Intel Core Ultra 9 - 36 Cores" },
+                 { label: "RAM", value: "256 GB DDR5 @ 7200 MT/s" },
+                 { label: "Storage", value: "TB PCIe Gen 5 NVMe" },
+                 { label: "PSU", value: "5000W 80+ Titanium" }
+                ].map((spec) => (
+                 <div key={spec.label} className="flex items-center justify-between py-2.5">
+                   <span className="text-[9px] tracking-[0.2em] uppercase font-mono text-[#B0B0B0]">
+                     {spec.label}
+                   </span>
+                   <span className="text-[11px] font-[400] text-[#1C1C1E] text-right ml-4 tracking-[-0.01em]">
+                     {spec.value}
+                   </span>
+                 </div>
+                ))}
+              </div>
 
                 <div className="mt-5 pt-5 border-t border-[#F0F0F0] flex flex-col sm:flex-row gap-2.5">
                   <BracketButton variant="solid" data-testid="button-request-build" onClick={() => scrollTo("inquire")}>
