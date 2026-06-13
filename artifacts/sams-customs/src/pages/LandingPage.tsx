@@ -5,6 +5,7 @@ import heroPcImage from "../assets/images/hero-pc.png";
 import chassisImage from "../assets/images/chassis-texture.png";
 import studioDeskImage from "../assets/images/studio-desk.png";
 import avantGardeImage from "../assets/images/avant-garde-case.png";
+import WorkstationShowcase from "@/components/WorkstationShowcase";
 
 function BracketButton({
   children,
@@ -264,6 +265,9 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* WORKSTATION SHOWCASE */}
+      <WorkstationShowcase />
 
       {/* THIN RULE */}
       <div className="w-full h-px bg-[#E8E8E8]" />
